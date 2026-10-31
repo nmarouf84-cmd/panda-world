@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0b132b"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🐼 Panda World Communication Software"
+        android:textColor="#4cc9f0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvNodesStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌐 Bridge Network: ACTIVE (12 Connected Nodes)"
+        android:textColor="#7209b7"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <EditText
+            android:id="@+id/etCommandInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Speak or type command (Ar/En)..."
+            android:textColor="#ffffff"
+            android:textColorHint="#8d99ae"
+            android:background="#1c2541"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnSendCommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="#7209b7"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action Logs & Connected Systems Status:"
+        android:textColor="#f72585"
+        android:textSize="14sp"
+        android:paddingBottom="6dp"/>
+
+    <ListView
+        android:id="@+id/lvActionLogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1c2541"
+        android:divider="#3a506b"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
